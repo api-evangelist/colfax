@@ -1,7 +1,12 @@
 aid: colfax
-url: https://raw.githubusercontent.com/api-evangelist/colfax/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/colfax/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.colfax.com
+description: >-
+  Colfax Corporation is a diversified global manufacturer and developer of gas- and
+  fluid-handling and fabrication technology products and services for commercial and
+  government customers around the world.
