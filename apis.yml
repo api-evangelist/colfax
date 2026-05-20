@@ -27,6 +27,8 @@ description: >-
   fall under Enovis or ESAB.
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/colfaxcorporation
   - type: Successor (Enovis)
     url: https://enovis.com
   - type: Successor (ESAB)
