@@ -35,7 +35,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/colfax.png
 access: 3rd-Party
 created: '2025-03-23'
-modified: '2026-04-28'
+modified: '2026-09-05'
 position: Consuming
 description: >-
   Colfax Corporation was a diversified global manufacturer founded in 1995 in
@@ -65,3 +65,33 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 specificationVersion: '0.23'
+x-status: defunct
+x-status-detail: Split in 2022 into ESAB Corporation and Enovis; Colfax Corporation no
+  longer exists as an operating entity and has no site of its own.
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Colfax Corporation stopped existing on 2022-04-04 — it spun off ESAB and
+    renamed itself Enovis — and its corporate domain colfaxcorp.com is now a
+    mail-only shell run by ESAB that publishes no A record at all, so every HTTP
+    probe fails at DNS; the only surviving Colfax-branded host,
+    ir.colfaxcorp.com, is a pre-2022 press-release archive on Q4's IR platform
+    that returns 403 to every non-browser client including /robots.txt.
+  evidence:
+    - url: https://colfaxcorp.com/
+      status: 0
+    - url: https://colfaxcorp.com/.well-known/security.txt
+      status: 0
+    - url: https://ir.colfaxcorp.com/robots.txt
+      status: 403
+    - url: https://ir.colfaxcorp.com/.well-known/agent-card.json
+      status: 403
+    - url: https://enovis.com/corporate-info/our-company/history
+      status: 200
+  checked: '2026-09-05'

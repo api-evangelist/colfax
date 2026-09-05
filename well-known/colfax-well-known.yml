@@ -1,0 +1,150 @@
+generated: '2026-09-05'
+method: probed
+source: >-
+  Direct HTTP probes of every host this record knows that Colfax Corporation
+  itself controlled (colfaxcorp.com, www.colfaxcorp.com, ir.colfaxcorp.com),
+  2026-09-05. Successor-owned hosts (enovis.com, esabcorporation.com) are
+  deliberately NOT probed into this file — a document served by Enovis or ESAB
+  is not a document Colfax Corporation publishes, and recording one here would
+  credit a dissolved brand with a successor's surface.
+note: >-
+  Colfax Corporation ceased to exist as an operating brand on 2022-04-04, when
+  it spun off ESAB Corporation and renamed itself Enovis Corporation. This file
+  records a measured ABSENCE: no .well-known document is served on any
+  Colfax-branded host. No WellKnown or SecurityTxt pointer is emitted in
+  apis.yml, because nothing returned a 200 carrying a real document.
+hosts:
+  - host: colfaxcorp.com
+    note: >-
+      Registrable domain of the former Colfax Corporation. Still registered and
+      still carrying DNS (Azure DNS nameservers), but it publishes NO A record,
+      so every HTTP request fails at resolution. The corporate website is fully
+      retired, not merely redirected. Status 0 below means "did not resolve",
+      not "server answered 0".
+    documents:
+      - path: /.well-known/security.txt
+        status: 0
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 0
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 0
+        file: null
+      - path: /.well-known/api-catalog
+        status: 0
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 0
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 0
+        file: null
+      - path: /.well-known/agent.json
+        status: 0
+        file: null
+  - host: www.colfaxcorp.com
+    note: No A record; identical resolution failure to the apex.
+    documents:
+      - path: /.well-known/security.txt
+        status: 0
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 0
+        file: null
+      - path: /.well-known/agent.json
+        status: 0
+        file: null
+  - host: ir.colfaxcorp.com
+    note: >-
+      The one surviving Colfax-branded host. Resolves through the Q4 Inc.
+      investor-relations platform (colfaxcorp.gcs-web.com) behind Akamai, and
+      serves an archive of pre-2022 Colfax press releases that search engines
+      still index. The edge returns 403 to every non-browser client — including
+      /robots.txt — so nothing here is machine-readable to us. This is a bot
+      challenge, NOT a dead host: the archived releases demonstrably exist.
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 403
+        file: null
+      - path: /.well-known/agent.json
+        status: 403
+        file: null
+contract_discovery:
+  note: >-
+    STEP 0b was run in full against every Colfax-controlled host. apis[] is
+    empty, so there is no baseURL host and no OpenAPI servers[] host; the docs
+    host does not exist because Colfax never ran a developer program.
+  probes:
+    - url: https://colfaxcorp.com/openapi.json
+      status: 0
+    - url: https://colfaxcorp.com/llms.txt
+      status: 0
+    - url: https://colfaxcorp.com/apis.json
+      status: 0
+    - url: https://ir.colfaxcorp.com/openapi.json
+      status: 403
+    - url: https://ir.colfaxcorp.com/llms.txt
+      status: 403
+    - url: https://ir.colfaxcorp.com/apis.json
+      status: 403
+    - url: https://ir.colfaxcorp.com/robots.txt
+      status: 403
+  graphql: not-applicable — no GraphQL surface named anywhere in the record or the public web
+  mcp: not-applicable — no MCP endpoint published under any Colfax brand
+  ogc: not-applicable — no geospatial evidence in the record or prose
+  a2a: >-
+    No agent card. /.well-known/agent-card.json and the legacy
+    /.well-known/agent.json were probed on every Colfax host and returned 0 (no
+    A record) or 403 (edge deny). Nothing was written to a2a/ — a card is
+    search-only and must never be authored on a provider's behalf.
+domain_disposition:
+  note: >-
+    Material provenance finding. colfaxcorp.com survives as a mail and DNS
+    shell, and it is administered by ESAB Corporation — the fabrication
+    technology spin-off — not by Enovis, the entity that inherited the Colfax
+    legal identity. Recorded because it corrects the naive assumption that the
+    renamed entity kept the old domain.
+  evidence:
+    - record: SPF (TXT colfaxcorp.com)
+      value: v=spf1 include:spf.protection.outlook.com a:analytics.colfaxcorp.com a:mail.esab.eu -all
+    - record: DMARC (TXT _dmarc.colfaxcorp.com)
+      value: v=DMARC1; p=none; rua=mailto:dmarcreport@esab.com; ruf=mailto:dmarcreport@esab.com; fo=1
+    - record: MX
+      value: colfaxcorp-com.mail.protection.outlook.com
+    - record: A
+      value: none published
+    - record: CAA
+      value: none published
+    - record: DS (DNSSEC)
+      value: none published
+  checked: '2026-09-05'
+name_collisions:
+  note: >-
+    "Colfax" is a heavily reused name. These are DIFFERENT companies and must
+    never be folded into this record or scored against it.
+  distinct_entities:
+    - name: Colfax International
+      domain: colfax-intl.com
+      business: HPC / AI workstations and Intel-partner compute systems
+    - name: Colfax Corporation (Chicago)
+      domain: colfaxcorp.net
+      business: Environmental remediation services, operating since 1985
+    - name: City of Colfax, Washington
+      domain: colfaxwa.org
+      business: Municipality; colfax.com 302-redirects here
