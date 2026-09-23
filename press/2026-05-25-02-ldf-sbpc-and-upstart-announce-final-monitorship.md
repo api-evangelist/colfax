@@ -1,7 +1,9 @@
 ---
 title: LDF, SBPC, and Upstart Announce Final Monitorship ...
 url: https://www.naacpldf.org/press-release/ldf-sbpc-and-upstart-announce-final-monitorship-report-on-ai-and-fair-lending/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Colfax" press release artificial intelligence'
 position: 2
 source: serpapi-google

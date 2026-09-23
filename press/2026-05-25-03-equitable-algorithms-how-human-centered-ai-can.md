@@ -1,7 +1,9 @@
 ---
 title: 'Equitable Algorithms: How Human-Centered AI Can ...'
 url: https://www.relmanlaw.com/media/news/1090_2021.05_Hayes_HFSC_AI_Task_Force_Testimony.pdf
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Colfax" press release artificial intelligence'
 position: 3
 source: serpapi-google
