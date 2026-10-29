@@ -1,4 +1,4 @@
-# Colfax Corporation (colfax)
+# Colfax Corporation (Historical)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,43 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
+
 Colfax Corporation was a diversified global manufacturer founded in 1995 in Richmond, Virginia by Steven and Mitchell Rales. In April 2022, Colfax completed the spin-off of its fabrication technology business as ESAB Corporation (NYSE: ESAB) and renamed itself Enovis Corporation (NYSE: ENOV), refocusing on specialty medical technologies. The Colfax brand and corporate entity no longer exists as an operating company. This profile is preserved for historical reference and routes to the two successor entities. No Colfax-branded developer APIs were ever published; any successor APIs would fall under Enovis or ESAB.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/colfax/refs/heads/main/apis.yml)
+**Areas:** Fabrication Technology · Historical · Industrial · Medical Technology · Spin-Off · Defunct
 
-## Scope
+## Colfax Corporation (Historical) on APIs.io (historical record)
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Colfax Corporation (Historical) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/colfax/](https://apis.io/providers/colfax/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+## API Evangelist rating
 
-- Fabrication Technology
-- Historical
-- Industrial
-- Medical Technology
-- Spin-Off
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
 
-## Timestamps
+## How this profile is made
 
-- **Created:** 2025-03-23
-- **Modified:** 2026-04-28
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## APIs
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Colfax Corporation (Historical): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-No public APIs were ever documented under the Colfax brand. Following the April 2022 separation, the developer surface area transferred to the two successor entities, Enovis (NYSE: ENOV) for medical technologies and ESAB Corporation (NYSE: ESAB) for fabrication technologies.
+## Open an issue
 
-## Common Properties
-
-- [Successor: Enovis](https://enovis.com)
-- [Successor: ESAB](https://www.esabcorporation.com)
-- [History](https://enovis.com/corporate-info/our-company/history)
-- [Spin-Off Announcement](https://ir.enovis.com/news-releases/news-release-details/enovis-formerly-colfax-completes-spin-esab-corporation)
-- [Wikipedia](https://en.wikipedia.org/wiki/Enovis)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/colfax/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
